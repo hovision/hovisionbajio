@@ -2,76 +2,110 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Comercializadora H.O. Visión del Bajío</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>Comercializadora H.O. Visión del Bajío</title>
 <style>
 body{
     margin:0;
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:#f4f6f9;
-    color:#333;
+    font-family: Arial, sans-serif;
+    background-color:#f4f8fb;
 }
 
 header{
-    background:linear-gradient(90deg,#0a3d62,#145a86);
+    background:#0b3c5d;
     color:white;
-    padding:50px 20px;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header img{
+    max-width:150px;
+    margin-bottom:15px;
+}
+
+h1{
+    margin:0;
+}
+
+.slogan{
+    font-style:italic;
+    margin-top:10px;
+}
+
+nav{
+    background:#1d70a2;
+    padding:15px;
     text-align:center;
 }
 
-header h1{
-    margin:0;
-    font-size:28px;
-    letter-spacing:1px;
-}
-
-header p{
-    margin-top:15px;
-    font-size:17px;
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 section{
     padding:50px 20px;
     max-width:1000px;
     margin:auto;
-    text-align:center;
 }
 
 h2{
-    color:#0a3d62;
-    margin-bottom:25px;
+    color:#0b3c5d;
+}
+
+.productos{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    margin:15px;
-    border-radius:8px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.btn{
-    background:#0a3d62;
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
     color:white;
-    padding:14px 28px;
+    padding:15px 20px;
+    border-radius:50px;
     text-decoration:none;
-    border-radius:6px;
-    display:inline-block;
-    margin-top:20px;
     font-weight:bold;
 }
 
-.btn:hover{
-    background:#082c44;
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input, textarea{
+    margin-bottom:15px;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#0b3c5d;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
 }
 
 footer{
-    background:#0a3d62;
+    background:#0b3c5d;
     color:white;
     text-align:center;
-    padding:25px;
-    margin-top:40px;
+    padding:20px;
 }
 </style>
 </head>
@@ -79,60 +113,73 @@ footer{
 <body>
 
 <header>
-<h1>COMERCIALIZADORA H.O. VISIÓN DEL BAJÍO</h1>
-<p>Distribución especializada de insumos médicos y oftalmológicos</p>
+    <!-- AQUI VA TU LOGO -->
+    <img src="logo.png" alt="Logo H.O. Visión del Bajío">
+    <h1>Comercializadora H.O. Visión del Bajío</h1>
+    <p class="slogan">"Por una mejor visión"</p>
+    <p>Entrega inmediata en León, Gto., México</p>
 </header>
 
-<section>
-<h2>Nosotros</h2>
-<div class="card">
-<p>Empresa dedicada a la comercialización y suministro inmediato de productos médicos especializados.</p>
-<p><strong>Entrega inmediata en León, Guanajuato, México.</strong></p>
-</div>
+<nav>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>Somos una empresa 100% mexicana nacida en León, Guanajuato, especializada en la distribución de productos oftalmológicos y material médico. 
+    Nuestro compromiso es brindar un servicio profesional, confiable y eficiente a nuestros clientes.</p>
+    
+    <p>Nos distingue nuestro excelente servicio y entregas rápidas el mismo día. 
+    Trabajamos bajo nuestro lema:</p>
+
+    <h3>"Por una mejor visión"</h3>
 </section>
 
-<section>
-<h2>Nuestros Productos</h2>
+<section id="productos">
+    <h2>Tipos de Productos</h2>
+    <div class="productos">
+        <div class="card">
+            <h3>Lentes Intraoculares</h3>
+            <p>Línea quirúrgica completa de Bausch & Lomb.</p>
+        </div>
 
-<div class="card">
-<p><strong>Línea Quirúrgica Completa de Bausch & Lomb</strong></p>
-<p>Lentes intraoculares y soluciones para cirugía oftalmológica.</p>
-</div>
+        <div class="card">
+            <h3>Medicamentos Oftálmicos</h3>
+            <p>Productos de Valeant, Tecnofarma y Laboratorios Grossman.</p>
+        </div>
 
-<div class="card">
-<p><strong>Medicamentos Especializados</strong></p>
-<p>Productos de laboratorios como Valeant, Tecnofarma y Grossman.</p>
-</div>
+        <div class="card">
+            <h3>Material de Curación</h3>
+            <p>Insumos médicos para procedimientos quirúrgicos.</p>
+        </div>
 
-<div class="card">
-<p><strong>Material de Curación</strong></p>
-<p>Insumos médicos con disponibilidad inmediata.</p>
-</div>
-
+        <div class="card">
+            <h3>Equipo Médico</h3>
+            <p>Distribución especializada para doctores y clínicas.</p>
+        </div>
+    </div>
 </section>
 
-<section>
-<h2>Servicios</h2>
-<div class="card">
-<p>✔ Disponibilidad inmediata</p>
-<p>✔ Entregas urgentes el mismo día en León, Gto.</p>
-<p>✔ Atención directa y personalizada a médicos</p>
-<p>✔ Servicio confiable y profesional</p>
-</div>
-</section>
-
-<section>
-<h2>Contacto</h2>
-<div class="card">
-<p><strong>Ubicación:</strong> León, Guanajuato, México</p>
-<p><strong>Teléfono:</strong> (Tu número aquí)</p>
-<a class="btn" href="https://wa.me/521XXXXXXXXXX">Enviar WhatsApp</a>
-</div>
+<section id="contacto">
+    <h2>Formulario de Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono">
+        <textarea rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+        <button type="submit">Enviar Mensaje</button>
+    </form>
 </section>
 
 <footer>
-© 2026 Comercializadora H.O. Visión del Bajío | León, Gto, México
+    <p>© 2026 Comercializadora H.O. Visión del Bajío | León, Guanajuato</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/524792313369" target="_blank">
+    WhatsApp
+</a>
 
 </body>
 </html>
