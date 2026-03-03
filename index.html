@@ -8,51 +8,70 @@
 <style>
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
     background:#f4f6f9;
+    color:#333;
 }
 
 header{
-    background:#0a3d62;
+    background:linear-gradient(90deg,#0a3d62,#145a86);
     color:white;
-    padding:40px 20px;
+    padding:50px 20px;
     text-align:center;
 }
 
 header h1{
     margin:0;
     font-size:28px;
+    letter-spacing:1px;
 }
 
 header p{
-    margin-top:10px;
-    font-size:16px;
+    margin-top:15px;
+    font-size:17px;
 }
 
 section{
-    padding:40px 20px;
+    padding:50px 20px;
+    max-width:1000px;
+    margin:auto;
     text-align:center;
 }
 
 h2{
     color:#0a3d62;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin:15px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .btn{
     background:#0a3d62;
     color:white;
-    padding:12px 25px;
+    padding:14px 28px;
     text-decoration:none;
-    border-radius:5px;
+    border-radius:6px;
     display:inline-block;
-    margin-top:15px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#082c44;
 }
 
 footer{
     background:#0a3d62;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:25px;
+    margin-top:40px;
 }
 </style>
 </head>
@@ -61,32 +80,58 @@ footer{
 
 <header>
 <h1>COMERCIALIZADORA H.O. VISIÓN DEL BAJÍO</h1>
-<p>Distribución especializada de Lentes Intraoculares</p>
+<p>Distribución especializada de insumos médicos y oftalmológicos</p>
 </header>
 
 <section>
 <h2>Nosotros</h2>
-<p>Empresa especializada en el suministro inmediato de lentes intraoculares para médicos oftalmólogos.</p>
-<p>Ofrecemos atención personalizada, disponibilidad inmediata y entregas urgentes el mismo día.</p>
+<div class="card">
+<p>Empresa dedicada a la comercialización y suministro inmediato de productos médicos especializados.</p>
+<p><strong>Entrega inmediata en León, Guanajuato, México.</strong></p>
+</div>
+</section>
+
+<section>
+<h2>Nuestros Productos</h2>
+
+<div class="card">
+<p><strong>Línea Quirúrgica Completa de Bausch & Lomb</strong></p>
+<p>Lentes intraoculares y soluciones para cirugía oftalmológica.</p>
+</div>
+
+<div class="card">
+<p><strong>Medicamentos Especializados</strong></p>
+<p>Productos de laboratorios como Valeant, Tecnofarma y Grossman.</p>
+</div>
+
+<div class="card">
+<p><strong>Material de Curación</strong></p>
+<p>Insumos médicos con disponibilidad inmediata.</p>
+</div>
+
 </section>
 
 <section>
 <h2>Servicios</h2>
-<p>✔ Entregas urgentes</p>
-<p>✔ Atención directa a médicos</p>
+<div class="card">
 <p>✔ Disponibilidad inmediata</p>
+<p>✔ Entregas urgentes el mismo día en León, Gto.</p>
+<p>✔ Atención directa y personalizada a médicos</p>
 <p>✔ Servicio confiable y profesional</p>
+</div>
 </section>
 
 <section>
 <h2>Contacto</h2>
-<p>León, Guanajuato</p>
-<p>Teléfono: (Tu número aquí)</p>
+<div class="card">
+<p><strong>Ubicación:</strong> León, Guanajuato, México</p>
+<p><strong>Teléfono:</strong> (Tu número aquí)</p>
 <a class="btn" href="https://wa.me/521XXXXXXXXXX">Enviar WhatsApp</a>
+</div>
 </section>
 
 <footer>
-© 2026 Comercializadora H.O. Visión del Bajío
+© 2026 Comercializadora H.O. Visión del Bajío | León, Gto, México
 </footer>
 
 </body>
