@@ -4,182 +4,112 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Comercializadora H.O. Visión del Bajío</title>
+
 <style>
+
 body{
     margin:0;
     font-family: Arial, sans-serif;
     background-color:#f4f8fb;
 }
 
+/* HEADER */
 header{
-    background:#0b3c5d;
+    background:#1f2f5a;
     color:white;
     text-align:center;
-    padding:30px 20px;
+    padding:40px 20px;
 }
 
-header img{
-    max-width:150px;
-    margin-bottom:15px;
+.logo{
+    width:280px;
+    margin-bottom:20px;
 }
 
-h1{
-    margin:0;
-}
-
-.slogan{
-    font-style:italic;
-    margin-top:10px;
-}
-
-nav{
-    background:#1d70a2;
-    padding:15px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
+/* SECCIONES */
 section{
     padding:50px 20px;
-    max-width:1000px;
-    margin:auto;
+    text-align:center;
 }
 
 h2{
-    color:#0b3c5d;
+    color:#1f2f5a;
 }
 
+/* PRODUCTOS */
 .productos{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
 }
 
 .card{
     background:white;
-    padding:20px;
+    width:250px;
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    padding:20px;
 }
 
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
+.card img{
+    width:100%;
+    border-radius:8px;
 }
 
-form{
-    display:flex;
-    flex-direction:column;
-}
-
-input, textarea{
-    margin-bottom:15px;
-    padding:10px;
-    border-radius:5px;
-    border:1px solid #ccc;
-}
-
-button{
-    background:#0b3c5d;
-    color:white;
-    padding:12px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
+.card h3{
+    color:#1f2f5a;
 }
 
 footer{
-    background:#0b3c5d;
+    background:#1f2f5a;
     color:white;
     text-align:center;
     padding:20px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <!-- AQUI VA TU LOGO -->
-    <img src="logo.png" alt="Logo H.O. Visión del Bajío">
+    <img src="logo.jpeg" alt="Logo H.O. Visión del Bajío" class="logo">
     <h1>Comercializadora H.O. Visión del Bajío</h1>
-    <p class="slogan">"Por una mejor visión"</p>
-    <p>Entrega inmediata en León, Gto., México</p>
+    <p>Por una mejor visión</p>
 </header>
 
-<nav>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+<section>
+    <h2>Nuestros Productos</h2>
 
-<section id="nosotros">
-    <h2>Nosotros</h2>
-    <p>Somos una empresa 100% mexicana nacida en León, Guanajuato, especializada en la distribución de productos oftalmológicos y material médico. 
-    Nuestro compromiso es brindar un servicio profesional, confiable y eficiente a nuestros clientes.</p>
-    
-    <p>Nos distingue nuestro excelente servicio y entregas rápidas el mismo día. 
-    Trabajamos bajo nuestro lema:</p>
-
-    <h3>"Por una mejor visión"</h3>
-</section>
-
-<section id="productos">
-    <h2>Tipos de Productos</h2>
     <div class="productos">
+
         <div class="card">
+            <img src="producto1.jpg" alt="Lentes Intraoculares">
             <h3>Lentes Intraoculares</h3>
-            <p>Línea quirúrgica completa de Bausch & Lomb.</p>
+            <p>Línea quirúrgica especializada.</p>
         </div>
 
         <div class="card">
-            <h3>Medicamentos Varios</h3>
-            <p>Productos de Valeant, Tecnofarma y Laboratorios Grossman.</p>
+            <img src="producto2.jpg" alt="Medicamentos">
+            <h3>Medicamentos Oftálmicos</h3>
+            <p>Laboratorios reconocidos.</p>
         </div>
 
         <div class="card">
+            <img src="producto3.jpg" alt="Material de Curación">
             <h3>Material de Curación</h3>
-            <p>Insumos médicos para procedimientos quirúrgicos.</p>
+            <p>Insumos médicos especializados.</p>
         </div>
 
-        <div class="card">
-            <h3>Equipo Médico</h3>
-            <p>Distribución especializada para doctores y clínicas.</p>
-        </div>
     </div>
 </section>
 
-<section id="contacto">
-    <h2>Formulario de Contacto</h2>
-    <form>
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <input type="tel" placeholder="Teléfono">
-        <textarea rows="5" placeholder="Escriba su mensaje aquí"></textarea>
-        <button type="submit">Enviar Mensaje</button>
-    </form>
-</section>
-
 <footer>
-    <p>© 2026 Comercializadora H.O. Visión del Bajío | León, Guanajuato</p>
+    <p>Entregas inmediatas en León, Gto.</p>
+    <p>WhatsApp: 479 231 3369</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/524792313369" target="_blank">
-    WhatsApp
-</a>
 
 </body>
 </html>
