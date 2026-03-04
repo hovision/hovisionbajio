@@ -26,14 +26,26 @@ header{
     margin-bottom:20px;
 }
 
+h1{
+    margin:10px 0;
+}
+
 /* SECCIONES */
 section{
-    padding:50px 20px;
+    padding:60px 20px;
     text-align:center;
 }
 
 h2{
     color:#1f2f5a;
+    margin-bottom:20px;
+}
+
+/* NOSOTROS */
+.nosotros{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
 }
 
 /* PRODUCTOS */
@@ -62,6 +74,48 @@ h2{
     color:#1f2f5a;
 }
 
+/* FORMULARIO */
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#1f2f5a;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#16305a;
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
 footer{
     background:#1f2f5a;
     color:white;
@@ -80,25 +134,40 @@ footer{
     <p>Por una mejor visión</p>
 </header>
 
+<!-- NOSOTROS -->
+<section>
+    <h2>Nosotros</h2>
+    <div class="nosotros">
+        <p>
+        Somos una empresa 100% mexicana nacida en León, Guanajuato.
+        Nos distingue nuestro excelente servicio y entregas rápidas.
+        Nos especializamos en lentes intraoculares, medicamentos oftálmicos
+        y material de curación.
+        </p>
+        <p><strong>Entregas inmediatas en León, Gto.</strong></p>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
 <section>
     <h2>Nuestros Productos</h2>
 
     <div class="productos">
 
         <div class="card">
-            <img src="producto1.jpg" alt="Lentes Intraoculares">
+            <img src="producto1.jpg">
             <h3>Lentes Intraoculares</h3>
             <p>Línea quirúrgica especializada.</p>
         </div>
 
         <div class="card">
-            <img src="producto2.jpg" alt="Medicamentos">
+            <img src="producto2.jpg">
             <h3>Medicamentos Oftálmicos</h3>
             <p>Laboratorios reconocidos.</p>
         </div>
 
         <div class="card">
-            <img src="producto3.jpg" alt="Material de Curación">
+            <img src="producto3.jpg">
             <h3>Material de Curación</h3>
             <p>Insumos médicos especializados.</p>
         </div>
@@ -106,10 +175,27 @@ footer{
     </div>
 </section>
 
+<!-- FORMULARIO -->
+<section>
+    <h2>Contacto</h2>
+
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea rows="4" placeholder="Escribe tu mensaje"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
 <footer>
-    <p>Entregas inmediatas en León, Gto.</p>
     <p>WhatsApp: 479 231 3369</p>
+    <p>León, Guanajuato, México</p>
 </footer>
+
+<!-- BOTÓN WHATSAPP FLOTANTE -->
+<a class="whatsapp" href="https://wa.me/524792313369" target="_blank">
+    WhatsApp
+</a>
 
 </body>
 </html>
