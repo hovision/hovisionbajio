@@ -127,6 +127,8 @@ width:100%;
 border-radius:8px;
 }
 
+/* BOTONES */
+
 .boton-wpp{
 display:inline-block;
 margin-top:10px;
@@ -144,12 +146,34 @@ font-weight:bold;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:40px;
+gap:20px;
+margin-top:20px;
+}
+
+.lab{
+background:white;
+padding:15px 25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+font-weight:bold;
+}
+
+/* POR QUE ELEGIRNOS */
+
+.ventajas{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
 margin-top:30px;
 }
 
-.labs img{
-height:50px;
+.ventaja{
+background:white;
+padding:20px;
+border-radius:10px;
+width:240px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 /* CONTACTO */
@@ -157,6 +181,33 @@ height:50px;
 .contacto{
 max-width:500px;
 margin:auto;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:20px;
+}
+
+input, textarea{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+button{
+background:#2fa84f;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#248a40;
 }
 
 /* WHATSAPP */
@@ -190,7 +241,7 @@ text-align:center;
 
 <header>
 
-<img src="logo.png" class="logo">
+<img src="logo.jpeg" class="logo">
 
 <h1>Comercializadora H.O. Visión del Bajío</h1>
 
@@ -235,12 +286,7 @@ medicamentos y material médico.
 
 <p>
 Distribuimos productos para clínicas, hospitales y especialistas
-en oftalmología en León, Guanajuato y la región del Bajío.
-</p>
-
-<p>
-Nos distingue nuestro excelente servicio, atención personalizada
-y entregas rápidas.
+en oftalmología en León y la región del Bajío.
 </p>
 
 </div>
@@ -255,43 +301,37 @@ y entregas rápidas.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1580281657521-6c8b3c8c3b2f">
+<img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=600&q=60">
 
 <h3>Línea Quirúrgica Oftalmología</h3>
 
 <p>Productos especializados para cirugía oftalmológica.</p>
 
-<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">
-Cotizar
-</a>
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Cotizar</a>
 
 </div>
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88">
+<img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=60">
 
 <h3>Medicamentos</h3>
 
 <p>Medicamentos de laboratorios reconocidos.</p>
 
-<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">
-Cotizar
-</a>
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Cotizar</a>
 
 </div>
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=60">
 
 <h3>Material de Curación</h3>
 
 <p>Insumos médicos especializados.</p>
 
-<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">
-Cotizar
-</a>
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Cotizar</a>
 
 </div>
 
@@ -303,32 +343,49 @@ Cotizar
 
 <h2>Catálogo de Productos</h2>
 
-<p>Contamos con una amplia variedad de insumos oftalmológicos.</p>
-
 <div class="productos">
 
 <div class="card">
 <h3>Viscoelásticos</h3>
-<p>Productos especializados para cirugía oftalmológica.</p>
-<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
+<p>Productos para cirugía oftalmológica.</p>
+<a class="boton-wpp" href="https://wa.me/524792313369">Solicitar información</a>
 </div>
 
 <div class="card">
 <h3>Lentes Intraoculares</h3>
 <p>Lentes para procedimientos quirúrgicos.</p>
-<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
+<a class="boton-wpp" href="https://wa.me/524792313369">Solicitar información</a>
 </div>
 
 <div class="card">
-<h3>Medicamentos</h3>
+<h3>Medicamentos Oftálmicos</h3>
 <p>Medicamentos especializados.</p>
-<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
+<a class="boton-wpp" href="https://wa.me/524792313369">Solicitar información</a>
 </div>
 
-<div class="card">
-<h3>Material de Curación</h3>
-<p>Gasas, vendas y material médico.</p>
-<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
+</div>
+
+</section>
+
+<section>
+
+<h2>¿Por qué elegirnos?</h2>
+
+<div class="ventajas">
+
+<div class="ventaja">
+<h3>Entrega rápida</h3>
+<p>Entregas inmediatas en León, Guanajuato.</p>
+</div>
+
+<div class="ventaja">
+<h3>Atención personalizada</h3>
+<p>Asesoría directa para clínicas y especialistas.</p>
+</div>
+
+<div class="ventaja">
+<h3>Productos de calidad</h3>
+<p>Trabajamos con laboratorios reconocidos.</p>
 </div>
 
 </div>
@@ -341,10 +398,10 @@ Cotizar
 
 <div class="labs">
 
-<img src="https://logo.clearbit.com/bausch.com">
-<img src="https://logo.clearbit.com/valeant.com">
-<img src="https://logo.clearbit.com/tecnofarma.com.mx">
-<img src="https://logo.clearbit.com/grossman.com.mx">
+<div class="lab">Bausch & Lomb</div>
+<div class="lab">Valeant</div>
+<div class="lab">Tecnofarma</div>
+<div class="lab">Grossman</div>
 
 </div>
 
@@ -359,11 +416,23 @@ Cotizar
 <p><strong>Dirección:</strong><br>
 Privada Juan Pablo II Sur #108A<br>
 Col. San Jerónimo II<br>
-CP 37148<br>
+CP 37358<br>
 León, Guanajuato
 </p>
 
 <p><strong>WhatsApp:</strong> 479 231 3369</p>
+
+<form action="mailto:ho_vision@hotmail.com" method="post" enctype="text/plain">
+
+<input type="text" name="nombre" placeholder="Nombre" required>
+
+<input type="email" name="correo" placeholder="Correo electrónico" required>
+
+<textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+<button type="submit">Enviar mensaje</button>
+
+</form>
 
 </div>
 
