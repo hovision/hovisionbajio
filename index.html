@@ -56,9 +56,197 @@ nav a:hover{
 color:#2fa84f;
 }
 
-/* HERO */
+/* HERO INICIO */
 
 .inicio{
-background-image:url("https://images.unsplash.com/photo-1581595219315-a187dd40c322");
-background-size:cover;
-background-position:c
+background:linear-gradient(120deg,#1f2f5a,#4a6fa5);
+color:white;
+padding:90px 20px;
+text-align:center;
+}
+
+.titulo-inicio{
+font-size:34px;
+margin-bottom:15px;
+color:#2fa84f;
+}
+
+.inicio p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+margin-bottom:25px;
+}
+
+.boton{
+background:#2fa84f;
+color:white;
+padding:14px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+}
+
+.boton:hover{
+background:#248a40;
+}
+
+/* SECCIONES */
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h2{
+color:#1f2f5a;
+margin-bottom:20px;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+}
+
+/* PRODUCTOS */
+
+.productos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+width:260px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#1f2f5a;
+}
+
+.icono{
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* LABORATORIOS */
+
+.labs{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+}
+
+.lab{
+background:white;
+padding:20px 30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+font-weight:bold;
+color:#1f2f5a;
+}
+
+/* CONTACTO */
+
+.contacto{
+max-width:500px;
+margin:auto;
+}
+
+/* MAPA */
+
+.mapa{
+margin-top:40px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:40px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+
+footer{
+background:#1f2f5a;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+@media (max-width:768px){
+
+.productos{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" class="logo">
+
+<h1>Comercializadora H.O. Visión del Bajío</h1>
+
+<p>Por una mejor visión</p>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#productos">Productos</a>
+<a href="#laboratorios">Laboratorios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+
+<section class="inicio">
+
+<h2 class="titulo-inicio">
+Distribución especializada en productos oftalmológicos
+</h2>
+
+<p>
+Suministramos insumos médicos oftalmológicos, medicamentos
+y material de curación para clínicas, hospitales y especialistas.
+</p>
+
+<p><strong>Entrega inmediata en León, Guanajuato.</strong></p>
+
+<br>
+
+<a class="
