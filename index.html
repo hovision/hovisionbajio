@@ -8,6 +8,10 @@
 
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 margin:0;
 font-family:Arial, sans-serif;
@@ -25,8 +29,7 @@ box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 .logo{
-width:150px;
-margin-bottom:5px;
+width:140px;
 }
 
 header h1{
@@ -36,7 +39,6 @@ margin:5px 0;
 
 header p{
 color:#4a6fa5;
-font-size:18px;
 }
 
 /* MENU */
@@ -56,7 +58,7 @@ nav a:hover{
 color:#2fa84f;
 }
 
-/* HERO */
+/* INICIO */
 
 .inicio{
 background:linear-gradient(120deg,#1f2f5a,#4a6fa5);
@@ -66,22 +68,16 @@ text-align:center;
 }
 
 .titulo-inicio{
-font-size:34px;
-margin-bottom:15px;
 color:#2fa84f;
+font-size:34px;
 }
 
-.inicio p{
-font-size:18px;
-max-width:700px;
-margin:auto;
-margin-bottom:25px;
-}
-
-.boton{
-background:#2fa84f;
+.boton-principal{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
 color:white;
-padding:14px 25px;
+padding:15px 25px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
@@ -97,7 +93,6 @@ text-align:center;
 
 h2{
 color:#1f2f5a;
-margin-bottom:20px;
 }
 
 /* NOSOTROS */
@@ -122,19 +117,25 @@ margin-top:30px;
 .card{
 background:white;
 width:260px;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-transition:0.3s;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
-.card:hover{
-transform:translateY(-6px);
+.card img{
+width:100%;
+border-radius:8px;
 }
 
-.icono{
-font-size:40px;
-margin-bottom:10px;
+.boton-wpp{
+display:inline-block;
+margin-top:10px;
+background:#25D366;
+color:white;
+padding:10px 15px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
 }
 
 /* LABORATORIOS */
@@ -147,13 +148,8 @@ gap:40px;
 margin-top:30px;
 }
 
-.lab{
-background:white;
-padding:20px 30px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-font-weight:bold;
-color:#1f2f5a;
+.labs img{
+height:50px;
 }
 
 /* CONTACTO */
@@ -161,12 +157,6 @@ color:#1f2f5a;
 .contacto{
 max-width:500px;
 margin:auto;
-}
-
-/* MAPA */
-
-.mapa{
-margin-top:40px;
 }
 
 /* WHATSAPP */
@@ -177,11 +167,10 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px 18px;
+padding:15px;
 border-radius:40px;
-font-weight:bold;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+font-weight:bold;
 }
 
 /* FOOTER */
@@ -189,17 +178,8 @@ box-shadow:0 4px 10px rgba(0,0,0,0.2);
 footer{
 background:#1f2f5a;
 color:white;
-padding:25px;
+padding:20px;
 text-align:center;
-}
-
-@media (max-width:768px){
-
-.productos{
-flex-direction:column;
-align-items:center;
-}
-
 }
 
 </style>
@@ -220,6 +200,7 @@ align-items:center;
 <a href="#">Inicio</a>
 <a href="#nosotros">Nosotros</a>
 <a href="#productos">Productos</a>
+<a href="#catalogo">Catálogo</a>
 <a href="#laboratorios">Laboratorios</a>
 <a href="#contacto">Contacto</a>
 </nav>
@@ -232,17 +213,10 @@ align-items:center;
 Distribución especializada en productos oftalmológicos
 </h2>
 
-<p>
-Suministramos insumos médicos oftalmológicos, medicamentos
-y material de curación para clínicas, hospitales y especialistas.
-</p>
+<p>Entrega inmediata en León, Guanajuato</p>
 
-<p><strong>Entrega inmediata en León, Guanajuato.</strong></p>
-
-<br>
-
-<a class="boton" href="https://wa.me/524792313369" target="_blank">
-Solicitar información por WhatsApp
+<a class="boton-principal" href="https://wa.me/524792313369" target="_blank">
+Solicitar cotización por WhatsApp
 </a>
 
 </section>
@@ -255,16 +229,19 @@ Solicitar información por WhatsApp
 
 <p>
 Somos una empresa 100% mexicana nacida en León, Guanajuato,
-especializada en la distribución de insumos médicos oftalmológicos
-y material de curación.
+especializada en la distribución de productos oftalmológicos,
+medicamentos y material médico.
+</p>
+
+<p>
+Distribuimos productos para clínicas, hospitales y especialistas
+en oftalmología en León, Guanajuato y la región del Bajío.
 </p>
 
 <p>
 Nos distingue nuestro excelente servicio, atención personalizada
 y entregas rápidas.
 </p>
-
-<p><strong>Entregas inmediatas en León, Guanajuato.</strong></p>
 
 </div>
 
@@ -277,21 +254,81 @@ y entregas rápidas.
 <div class="productos">
 
 <div class="card">
-<div class="icono">👁️</div>
-<h3>Línea Quirúrgica</h3>
-<p>Productos especializados para procedimientos oftalmológicos.</p>
+
+<img src="https://images.unsplash.com/photo-1580281657521-6c8b3c8c3b2f">
+
+<h3>Línea Quirúrgica Oftalmología</h3>
+
+<p>Productos especializados para cirugía oftalmológica.</p>
+
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">
+Cotizar
+</a>
+
 </div>
 
 <div class="card">
-<div class="icono">💊</div>
+
+<img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88">
+
 <h3>Medicamentos</h3>
-<p>Medicamentos oftalmológicos de laboratorios reconocidos.</p>
+
+<p>Medicamentos de laboratorios reconocidos.</p>
+
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">
+Cotizar
+</a>
+
 </div>
 
 <div class="card">
-<div class="icono">🩹</div>
+
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+
 <h3>Material de Curación</h3>
-<p>Gasas, vendas, soluciones y material médico especializado.</p>
+
+<p>Insumos médicos especializados.</p>
+
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">
+Cotizar
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="catalogo">
+
+<h2>Catálogo de Productos</h2>
+
+<p>Contamos con una amplia variedad de insumos oftalmológicos.</p>
+
+<div class="productos">
+
+<div class="card">
+<h3>Viscoelásticos</h3>
+<p>Productos especializados para cirugía oftalmológica.</p>
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
+</div>
+
+<div class="card">
+<h3>Lentes Intraoculares</h3>
+<p>Lentes para procedimientos quirúrgicos.</p>
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
+</div>
+
+<div class="card">
+<h3>Medicamentos Oftálmicos</h3>
+<p>Medicamentos especializados.</p>
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
+</div>
+
+<div class="card">
+<h3>Material de Curación</h3>
+<p>Gasas, vendas y material médico.</p>
+<a class="boton-wpp" href="https://wa.me/524792313369" target="_blank">Solicitar información</a>
 </div>
 
 </div>
@@ -304,13 +341,43 @@ y entregas rápidas.
 
 <div class="labs">
 
-<div class="lab">Bausch & Lomb</div>
-<div class="lab">Valeant</div>
-<div class="lab">Tecnofarma</div>
-<div class="lab">Grossman</div>
+<img src="https://logo.clearbit.com/bausch.com">
+<img src="https://logo.clearbit.com/valeant.com">
+<img src="https://logo.clearbit.com/tecnofarma.com.mx">
+<img src="https://logo.clearbit.com/grossman.com.mx">
 
 </div>
 
 </section>
 
-<section
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<div class="contacto">
+
+<p><strong>Dirección:</strong><br>
+Privada Juan Pablo II Sur #108A<br>
+Col. San Jerónimo II<br>
+CP 37358<br>
+León, Guanajuato
+</p>
+
+<p><strong>WhatsApp:</strong> 479 231 3369</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Comercializadora H.O. Visión del Bajío</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/524792313369" target="_blank">
+WhatsApp
+</a>
+
+</body>
+</html>
