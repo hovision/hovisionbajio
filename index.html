@@ -62,15 +62,18 @@ color:#2fa84f;
 /* PORTADA */
 
 .inicio{
-background:linear-gradient(120deg,#1f2f5a,#4a6fa5);
+background-image:linear-gradient(rgba(31,47,90,0.85),rgba(31,47,90,0.85)),
+url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b");
+background-size:cover;
+background-position:center;
 color:white;
-padding:100px 20px;
+padding:120px 20px;
 text-align:center;
 }
 
 .titulo-inicio{
 color:#2fa84f;
-font-size:34px;
+font-size:36px;
 }
 
 .boton-principal{
@@ -147,16 +150,19 @@ font-weight:bold;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:25px;
-margin-top:20px;
+gap:40px;
+margin-top:30px;
 }
 
-.lab{
-background:white;
-padding:18px 28px;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-font-weight:bold;
+.labs img{
+height:60px;
+filter:grayscale(100%);
+opacity:0.8;
+}
+
+.labs img:hover{
+filter:none;
+opacity:1;
 }
 
 /* CONTACTO */
@@ -283,7 +289,7 @@ atención personalizada y entregas rápidas.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
 
 <h3>Línea Quirúrgica Oftalmológica</h3>
 
@@ -311,11 +317,11 @@ Cotizar
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322">
+<img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde">
 
 <h3>Material de Curación</h3>
 
-<p>Gasas, vendas e insumos médicos.</p>
+<p>Gasas, vendas, jeringas e insumos médicos.</p>
 
 <a class="boton-wpp" href="https://wa.me/524792313361">
 Cotizar
@@ -333,10 +339,10 @@ Cotizar
 
 <div class="labs">
 
-<div class="lab">Bausch + Lomb</div>
-<div class="lab">Valeant</div>
-<div class="lab">Tecnofarma</div>
-<div class="lab">Grossman</div>
+<img src="https://logo.clearbit.com/bausch.com">
+<img src="https://logo.clearbit.com/bauschhealth.com">
+<img src="https://logo.clearbit.com/tecnofarma.com.mx">
+<img src="https://logo.clearbit.com/grossman.com.mx">
 
 </div>
 
