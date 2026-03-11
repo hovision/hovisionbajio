@@ -29,7 +29,7 @@ text-align:center;
 box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
-.logo{width:150px;}
+.logo{width:140px;}
 
 header h1{
 color:#1f2f5a;
@@ -68,12 +68,17 @@ text-align:center;
 
 .titulo-inicio{
 color:#2fa84f;
-font-size:36px;
+font-size:38px;
+}
+
+.subtitulo{
+margin-top:10px;
+font-size:20px;
 }
 
 .boton-principal{
 display:inline-block;
-margin-top:20px;
+margin-top:25px;
 background:#25D366;
 color:white;
 padding:15px 25px;
@@ -81,6 +86,11 @@ border-radius:8px;
 text-decoration:none;
 font-weight:bold;
 font-size:18px;
+transition:0.3s;
+}
+
+.boton-principal:hover{
+transform:scale(1.05);
 }
 
 /* SECCIONES */
@@ -90,7 +100,9 @@ padding:60px 20px;
 text-align:center;
 }
 
-h2{color:#1f2f5a;}
+h2{
+color:#1f2f5a;
+}
 
 /* NOSOTROS */
 
@@ -115,15 +127,26 @@ margin-top:30px;
 background:white;
 width:260px;
 padding:20px;
-border-radius:10px;
+border-radius:12px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
 .card img{
 width:100%;
-height:170px;
+height:180px;
 object-fit:cover;
 border-radius:8px;
+}
+
+.icono{
+font-size:30px;
+margin-bottom:10px;
 }
 
 .boton-wpp{
@@ -149,6 +172,14 @@ margin-top:30px;
 
 .labs img{
 height:60px;
+filter:grayscale(100%);
+opacity:0.8;
+transition:0.3s;
+}
+
+.labs img:hover{
+filter:none;
+opacity:1;
 }
 
 /* CONTACTO */
@@ -191,7 +222,7 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px;
+padding:15px 18px;
 border-radius:40px;
 text-decoration:none;
 font-weight:bold;
@@ -218,7 +249,7 @@ text-align:center;
 
 <h1>Comercializadora H.O. Visión del Bajío</h1>
 
-<p>Distribución especializada en productos oftalmológicos</p>
+<p>Por una mejor visión</p>
 
 <nav>
 <a href="#">Inicio</a>
@@ -233,10 +264,12 @@ text-align:center;
 <section class="inicio">
 
 <h2 class="titulo-inicio">
-Productos oftalmológicos para clínicas y especialistas
+Distribución de productos oftalmológicos
 </h2>
 
-<p>Entrega inmediata en León, Guanajuato</p>
+<p class="subtitulo">
+Entrega inmediata en León, Guanajuato
+</p>
 
 <a class="boton-principal" href="https://wa.me/524792313361">
 Solicitar cotización por WhatsApp
@@ -257,8 +290,8 @@ medicamentos y material médico.
 </p>
 
 <p>
-Nos distingue nuestro excelente servicio,
-atención personalizada y entregas rápidas.
+Nos distingue nuestro excelente servicio, atención personalizada
+y entregas rápidas.
 </p>
 
 </div>
@@ -273,7 +306,9 @@ atención personalizada y entregas rápidas.
 
 <div class="card">
 
-<img src="https://www.leica-microsystems.com/fileadmin/content_excellence/solution_overview/medical-microscopy/ophthalmology/glaucoma-surgery/Ophthalmic_Surgery_Proveo8_Hamburg_Prof.Spitzer_39.jpg">
+<div class="icono">👁️</div>
+
+<img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322">
 
 <h3>Línea Quirúrgica Oftalmológica</h3>
 
@@ -285,7 +320,9 @@ atención personalizada y entregas rápidas.
 
 <div class="card">
 
-<img src="https://img.freepik.com/foto-gratis/doctora-hospital_23-2148827774.jpg">
+<div class="icono">💊</div>
+
+<img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88">
 
 <h3>Medicamentos</h3>
 
@@ -297,7 +334,9 @@ atención personalizada y entregas rápidas.
 
 <div class="card">
 
-<img src="https://img.freepik.com/foto-gratis/mascara-quirurgica-vendaje-gasa-cotonetes-vendaje-adhesivo-rodillera-tijera-sobre-fondo-blanco_2964099-4916.jpg">
+<div class="icono">🩹</div>
+
+<img src="https://images.unsplash.com/photo-1580281657527-47c0f9b7e9a7">
 
 <h3>Material de Curación</h3>
 
@@ -313,7 +352,12 @@ atención personalizada y entregas rápidas.
 
 <section id="laboratorios">
 
-<h2>Laboratorios</h2>
+<h2>Laboratorios con los que trabajamos</h2>
+
+<p>
+Distribuimos productos de laboratorios reconocidos
+en el sector médico y oftalmológico.
+</p>
 
 <div class="labs">
 
