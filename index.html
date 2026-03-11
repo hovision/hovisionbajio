@@ -162,24 +162,27 @@ font-weight:bold;
 
 /* LABORATORIOS */
 
+/* LABORATORIOS MEJORADOS */
 .labs{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:50px; /* más espacio entre logos */
+  margin-top:30px;
 }
 
 .labs img{
-height:60px;
-filter:grayscale(100%);
-opacity:0.8;
-transition:0.3s;
+  height:80px;           /* logos más grandes */
+  transition: transform 0.3s, filter 0.3s, opacity 0.3s;
+  filter: grayscale(0%); /* quitar gris para que se vean coloridos */
+  opacity:1;
 }
 
 .labs img:hover{
-filter:none;
-opacity:1;
+  transform: scale(1.2); /* efecto de zoom al pasar el mouse */
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); /* sombra ligera */
+  opacity:1;
 }
 
 /* CONTACTO */
