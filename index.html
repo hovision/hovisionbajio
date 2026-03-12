@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
@@ -29,7 +28,10 @@ text-align:center;
 box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
-.logo{width:140px;}
+.logo{
+width:260px;
+height:auto;
+}
 
 header h1{
 color:#1f2f5a;
@@ -162,32 +164,23 @@ font-weight:bold;
 
 /* LABORATORIOS */
 
-/* LABORATORIOS MEJORADOS */
 .labs{
-  display:flex;
-  flex-direction:column; /* esto los pone uno abajo del otro */
-  align-items:center;
-  gap:30px;
-  margin-top:30px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:30px;
+margin-top:30px;
 }
 
 .labs img{
-  width:150px;  /* todos del mismo tamaño */
-  height:auto;
-}
-}
-
-.labs img{
-  height:80px;           /* logos más grandes */
-  transition: transform 0.3s, filter 0.3s, opacity 0.3s;
-  filter: grayscale(0%); /* quitar gris para que se vean coloridos */
-  opacity:1;
+width:150px;
+height:auto;
+transition: transform 0.3s, filter 0.3s;
 }
 
 .labs img:hover{
-  transform: scale(1.2); /* efecto de zoom al pasar el mouse */
-  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); /* sombra ligera */
-  opacity:1;
+transform:scale(1.15);
+filter:drop-shadow(0 4px 6px rgba(0,0,0,0.2));
 }
 
 /* CONTACTO */
