@@ -238,6 +238,12 @@ padding:20px;
 text-align:center;
 }
 
+/* OCULTAR CATALOGO */
+
+#quirurgica{
+display:none;
+}
+
 </style>
 
 </head>
@@ -315,7 +321,7 @@ y entregas rápidas.
 
 <p>Equipo especializado para cirugía y diagnóstico de ojos.</p>
 
-<a class="boton-wpp" href="#quirurgica">Ver productos</a>
+<a class="boton-wpp" onclick="mostrarQuirurgica()">Ver productos</a>
 
 </div>
 
@@ -351,7 +357,6 @@ y entregas rápidas.
 
 </section>
 
-
 <section id="quirurgica">
 
 <h2>Productos de Línea Quirúrgica</h2>
@@ -366,9 +371,7 @@ y entregas rápidas.
 
 <p>Dioptrías del +0.00 al +30.00.</p>
 
-<p>Lente acrílica hidrofílica de una sola pieza con insertor descartable.</p>
-
-<a class="boton-wpp" href="https://wa.me/524792313361">Cotizar</a>
+<p>Lente acrílica hidrofílica de una sola pieza.</p>
 
 </div>
 
@@ -380,62 +383,9 @@ y entregas rápidas.
 
 <p>Dioptrías del +0.00 al +30.00.</p>
 
-<p>Lente acrílica hidrofílica de una sola pieza con insertor descartable.</p>
-
-<a class="boton-wpp" href="https://wa.me/524792313361">Cotizar</a>
+<p>Lente acrílica hidrofílica de una sola pieza.</p>
 
 </div>
-
-</div>
-
-</section>
-
-<section id="laboratorios">
-
-<h2>Laboratorios con los que trabajamos</h2>
-
-<p>
-Distribuimos productos de laboratorios reconocidos
-en el sector médico y oftalmológico.
-</p>
-
-<div class="labs">
-
-<div><img src="bl.png"></div>
-<div><img src="tec.png"></div>
-<div><img src="val.png"></div>
-<div><img src="gro.png"></div>
-
-</div>
-
-</section>
-
-<section id="contacto">
-
-<h2>Contacto</h2>
-
-<div class="contacto">
-
-<p><strong>Dirección:</strong><br>
-Privada Juan Pablo II Sur #108A<br>
-Col. San Jerónimo II<br>
-CP 37358<br>
-León, Guanajuato
-</p>
-
-<p><strong>WhatsApp:</strong> 479 231 3361</p>
-
-<form action="mailto:contacto@hovision.com" method="post" enctype="text/plain">
-
-<input type="text" name="nombre" placeholder="Nombre" required>
-
-<input type="email" name="correo" placeholder="Correo electrónico" required>
-
-<textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-
-<button type="submit">Enviar mensaje</button>
-
-</form>
 
 </div>
 
@@ -450,6 +400,15 @@ León, Guanajuato
 <a class="whatsapp" href="https://wa.me/524792313361">
 WhatsApp
 </a>
+
+<script>
+
+function mostrarQuirurgica(){
+document.getElementById("quirurgica").style.display="block";
+window.location.href="#quirurgica";
+}
+
+</script>
 
 </body>
 </html>
