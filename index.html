@@ -170,6 +170,24 @@ cursor:pointer;
 display:none;
 }
 
+/* SECCIÓN LÍNEA QUIRÚRGICA */
+#quirurgica .productos {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+  margin-top:30px;
+}
+
+#quirurgica .card img {
+  width:100%;
+  height:220px;        /* altura uniforme */
+  object-fit:contain;   /* mantiene proporción sin recortar */
+  background:#f4f7fb;  /* fondo gris suave */
+  padding:10px;
+  border-radius:8px;
+}
+
 /* LABORATORIOS */
 
 .labs{
@@ -361,6 +379,7 @@ Ver productos
 
 </section>
 
+<!-- SECCIÓN LÍNEA QUIRÚRGICA ACTUALIZADA -->
 <section id="quirurgica">
 
 <h2>Productos de Línea Quirúrgica</h2>
@@ -368,17 +387,19 @@ Ver productos
 <div class="productos">
 
 <div class="card">
-<img src="esf.png">
+<img src="esf.png" alt="Lente Intraocular Esférico">
 <h3>Lente Intraocular Esférico</h3>
 <p>Dioptrías del +0.00 al +30.00.</p>
 <p>Lente acrílica hidrofílica de una sola pieza.</p>
+<a class="boton-wpp" href="https://wa.me/524792313361">Cotizar</a>
 </div>
 
 <div class="card">
-<img src="asf.png">
+<img src="asf.png" alt="Lente Intraocular Asférico">
 <h3>Lente Intraocular Asférico</h3>
 <p>Dioptrías del +0.00 al +30.00.</p>
 <p>Lente acrílica hidrofílica de una sola pieza.</p>
+<a class="boton-wpp" href="https://wa.me/524792313361">Cotizar</a>
 </div>
 
 </div>
@@ -449,15 +470,11 @@ WhatsApp
 <script>
 
 function mostrarQuirurgica(){
-var seccion = document.getElementById("quirurgica");
-
-if(seccion.style.display === "none"){
-seccion.style.display = "block";
-seccion.scrollIntoView({behavior:"smooth"});
-}else{
-seccion.style.display = "none";
-}
-
+  var seccion = document.getElementById("quirurgica");
+  if(seccion.style.display === "none"){
+    seccion.style.display = "block";
+    seccion.scrollIntoView({behavior:"smooth"});
+  }
 }
 
 </script>
