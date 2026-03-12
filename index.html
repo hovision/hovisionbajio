@@ -160,6 +160,14 @@ padding:10px 15px;
 border-radius:6px;
 text-decoration:none;
 font-weight:bold;
+border:none;
+cursor:pointer;
+}
+
+/* OCULTAR CATALOGO QUIRURGICO */
+
+#quirurgica{
+display:none;
 }
 
 /* LABORATORIOS */
@@ -315,7 +323,9 @@ y entregas rápidas.
 
 <p>Equipo especializado para cirugía y diagnóstico de ojos.</p>
 
-<a class="boton-wpp" href="#quirurgica">Ver productos</a>
+<button class="boton-wpp" onclick="mostrarQuirurgica()">
+Ver productos
+</button>
 
 </div>
 
@@ -379,6 +389,11 @@ y entregas rápidas.
 
 <h2>Laboratorios con los que trabajamos</h2>
 
+<p>
+Distribuimos productos de laboratorios reconocidos
+en el sector médico y oftalmológico.
+</p>
+
 <div class="labs">
 
 <div><img src="bl.png"></div>
@@ -408,7 +423,9 @@ León, Guanajuato
 <form action="mailto:contacto@hovision.com" method="post" enctype="text/plain">
 
 <input type="text" name="nombre" placeholder="Nombre" required>
+
 <input type="email" name="correo" placeholder="Correo electrónico" required>
+
 <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
 
 <button type="submit">Enviar mensaje</button>
@@ -428,6 +445,22 @@ León, Guanajuato
 <a class="whatsapp" href="https://wa.me/524792313361">
 WhatsApp
 </a>
+
+<script>
+
+function mostrarQuirurgica(){
+var seccion = document.getElementById("quirurgica");
+
+if(seccion.style.display === "none"){
+seccion.style.display = "block";
+seccion.scrollIntoView({behavior:"smooth"});
+}else{
+seccion.style.display = "none";
+}
+
+}
+
+</script>
 
 </body>
 </html>
