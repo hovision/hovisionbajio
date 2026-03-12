@@ -165,11 +165,16 @@ font-weight:bold;
 /* LABORATORIOS MEJORADOS */
 .labs{
   display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+  flex-direction:column; /* esto los pone uno abajo del otro */
   align-items:center;
-  gap:50px; /* más espacio entre logos */
+  gap:30px;
   margin-top:30px;
+}
+
+.labs img{
+  width:150px;  /* todos del mismo tamaño */
+  height:auto;
+}
 }
 
 .labs img{
